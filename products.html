@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Products - Radiance Skincare</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Radiance</a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Shop All</a></li>
+                    <li><a href="ingredients.html">Ingredients</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="products.html" class="button primary-button hidden-mobile">Shop Now</a>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header products-header">
+        <div class="container text-center">
+            <h1>Our Skincare Collections</h1>
+            <p>Discover a full range of products formulated for every skin type and concern, designed to reveal your best skin.</p>
+        </div>
+    </section>
+
+    <section class="product-listing section-padding bg-light">
+        <div class="container">
+            <div class="filters-and-sort">
+                <div class="filter-buttons">
+                    <button class="button secondary-button active" data-filter="all">All Products</button>
+                    <button class="button secondary-button" data-filter="cleansers">Cleansers</button>
+                    <button class="button secondary-button" data-filter="serums">Serums</button>
+                    <button class="button secondary-button" data-filter="moisturizers">Moisturizers</button>
+                    <button class="button secondary-button" data-filter="masks">Masks & Treatments</button>
+                </div>
+                <div class="sort-options">
+                    <label for="sortOrder">Sort By:</label>
+                    <select id="sortOrder">
+                        <option value="default">Featured</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="name-asc">Name: A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <div class="product-card" data-category="cleansers" data-price="1100" data-name="Gentle Foaming Cleanser">
+                    <img src="images/gentle-foaming-cleanser.jpg" alt="Gentle Foaming Cleanser" width="250px" height="auto">
+                    <h3>Gentle Foaming Cleanser</h3>
+                    <p class="tagline">Purify & Refresh</p>
+                    <p class="price">₹1,100</p>
+                    <a href="product-detail.html?id=cleanser" class="button primary-button small-button">View Details</a>
+                    <button class="button secondary-button small-button add-to-cart-btn" data-product-id="cleanser"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+                </div>
+                <div class="product-card" data-category="serums" data-price="1850" data-name="Hydrating Glow Serum">
+                    <img src="images/ela-de-pure-rqK_baq_XgI-unsplash.jpg" alt="Hydrating Serum" width="250px" height="auto">
+                    <h3>Hydrating Glow Serum</h3>
+                    <p class="tagline">Intense Hydration</p>
+                    <p class="price">₹1,850</p>
+                    <a href="product-detail.html?id=serum" class="button primary-button small-button">View Details</a>
+                    <button class="button secondary-button small-button add-to-cart-btn" data-product-id="serum"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+                </div>
+                <div class="product-card" data-category="moisturizers" data-price="1500" data-name="Deep Hydration Cream">
+                    <img src="images/pexels-monirathnak-24602064.jpg" alt="Deep Hydration Moisturizer" width="250px" height="auto">
+                    <h3>Deep Hydration Cream</h3>
+                    <p class="tagline">Nourish & Protect</p>
+                    <p class="price">₹1,500</p>
+                    <a href="product-detail.html?id=moisturizer" class="button primary-button small-button">View Details</a>
+                    <button class="button secondary-button small-button add-to-cart-btn" data-product-id="moisturizer"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+                </div>
+                 <div class="product-card" data-category="masks" data-price="1300" data-name="Purifying Clay Mask">
+                    <img src="images/face-mask.jpg" alt="Purifying Clay Mask" width="250px" height="auto">
+                    <h3>Purifying Clay Mask</h3>
+                    <p class="tagline">Detox & Refine</p>
+                    <p class="price">₹1,300</p>
+                    <a href="product-detail.html?id=mask" class="button primary-button small-button">View Details</a>
+                    <button class="button secondary-button small-button add-to-cart-btn" data-product-id="mask"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+                </div>
+                <div class="product-card" data-category="serums" data-price="2200" data-name="Vitamin C Brightening Serum">
+                    <img src="images/ela-de-pure-rqK_baq_XgI-unsplash.jpg" alt="Vitamin C Brightening Serum" width="250px" height="auto">
+                    <h3>Vitamin C Brightening Serum</h3>
+                    <p class="tagline">Illuminate & Even</p>
+                    <p class="price">₹2,200</p>
+                    <a href="product-detail.html?id=vitc-serum" class="button primary-button small-button">View Details</a>
+                    <button class="button secondary-button small-button add-to-cart-btn" data-product-id="vitc-serum"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+                </div>
+                 <div class="product-card" data-category="moisturizers" data-price="1650" data-name="Lightweight Gel Cream">
+                    <img src="images/light-weight.jpg" alt="Lightweight Gel Cream" width="250px" height="auto">
+                    <h3>Lightweight Gel Cream</h3>
+                    <p class="tagline">Hydrate without heaviness</p>
+                    <p class="price">₹1,650</p>
+                    <a href="product-detail.html?id=gel-cream" class="button primary-button small-button">View Details</a>
+                    <button class="button secondary-button small-button add-to-cart-btn" data-product-id="gel-cream"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-consultation-section section-padding bg-dark">
+        <div class="container text-center">
+            <h2>Pure Ingredients, Real Results</h2>
+            <p>Our commitment to clean beauty means effective formulas without compromise. Explore our full range.</p>
+            <a href="ingredients.html" class="button primary-button large-button">Our Ingredient Philosophy</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Radiance Skincare</h4>
+                    <p>Unlocking your skin's natural potential with pure, effective, and ethically made skincare.</p>
+                    <p><i class="fas fa-map-marker-alt"></i> [Your City, State, Country]</p>
+                    <p><i class="fas fa-phone"></i> +91 [Your Phone Number]</p>
+                    <p><i class="fas fa-envelope"></i> support@radiance.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="products.html?category=cleansers">Cleansers</a></li>
+                        <li><a href="products.html?category=serums">Serums</a></li>
+                        <li><a href="products.html?category=moisturizers">Moisturizers</a></li>
+                        <li><a href="products.html?category=masks">Masks & Treatments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="ingredients.html">Our Ingredients</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Press & Media</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Radiance Skincare. All rights reserved.</p>
+                <p>Handcrafted with love.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/products.js"></script> </body>
+</html>

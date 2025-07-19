@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="productTitle">Product Detail - Radiance Skincare</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Radiance</a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Shop All</a></li>
+                    <li><a href="ingredients.html">Ingredients</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="products.html" class="button primary-button hidden-mobile">Shop Now</a>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="product-detail-page section-padding">
+        <div class="container product-layout">
+            <div class="product-image-gallery">
+                <img src="images/product-serum-large.jpg" alt="Hydrating Glow Serum" id="mainProductImage">
+                <div class="thumbnail-gallery">
+                    <img src="images/product-serum.jpg" alt="Thumbnail 1" class="active-thumb" data-full-src="images/product-serum-large.jpg">
+                    <img src="images/product-serum-texture.jpg" alt="Thumbnail 2" data-full-src="images/product-serum-texture.jpg">
+                    <img src="images/product-serum-usage.jpg" alt="Thumbnail 3" data-full-src="images/product-serum-usage.jpg">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 id="productName">Hydrating Glow Serum</h1>
+                <p class="product-price" id="productPrice">₹1,850</p>
+                <p class="product-description" id="productDescription">
+                    An intensive hydrating serum infused with Hyaluronic Acid and Niacinamide to plump, smooth, and restore your skin's natural moisture barrier. Achieve a dewy, radiant complexion with just a few drops.
+                </p>
+
+                <div class="product-features">
+                    <h3>Key Benefits:</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Deeply hydrates and plumps skin</li>
+                        <li><i class="fas fa-check-circle"></i> Improves skin texture and elasticity</li>
+                        <li><i class="fas fa-check-circle"></i> Minimizes appearance of fine lines</li>
+                        <li><i class="fas fa-check-circle"></i> Boosts natural radiance</li>
+                    </ul>
+                </div>
+
+                <div class="product-ingredients">
+                    <h3>Star Ingredients:</h3>
+                    <ul>
+                        <li>**Hyaluronic Acid:** Superior hydration, plumps skin.</li>
+                        <li>**Niacinamide (Vitamin B3):** Minimizes pores, evens tone.</li>
+                        <li>**Glycerin:** Attracts and locks in moisture.</li>
+                        <li>**Green Tea Extract:** Antioxidant protection.</li>
+                    </ul>
+                    <a href="ingredients.html" class="button secondary-button small-button mt-10">Learn About All Ingredients</a>
+                </div>
+
+                <div class="product-actions">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button class="button primary-button large-button add-to-bag-button" data-product-id="serum">
+                        <i class="fas fa-shopping-bag"></i> Add to Bag
+                    </button>
+                </div>
+
+                <div class="how-to-use">
+                    <h3>How to Use:</h3>
+                    <p>Apply 2-3 drops to clean, damp skin after toning. Gently pat onto face and neck until absorbed. Follow with your favorite moisturizer. Use morning and night.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Pair With These</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/product-moisturizer.jpg" alt="Deep Hydration Moisturizer">
+                    <h3>Deep Hydration Cream</h3>
+                    <p class="price">₹1,500</p>
+                    <a href="product-detail.html?id=moisturizer" class="button primary-button small-button">View Details</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/product-cleanser.jpg" alt="Gentle Foaming Cleanser">
+                    <h3>Gentle Foaming Cleanser</h3>
+                    <p class="price">₹1,100</p>
+                    <a href="product-detail.html?id=cleanser" class="button primary-button small-button">View Details</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/product-mask.jpg" alt="Purifying Clay Mask">
+                    <h3>Purifying Clay Mask</h3>
+                    <p class="price">₹1,300</p>
+                    <a href="product-detail.html?id=mask" class="button primary-button small-button">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Radiance Skincare</h4>
+                    <p>Unlocking your skin's natural potential with pure, effective, and ethically made skincare.</p>
+                    <p><i class="fas fa-map-marker-alt"></i> [Your City, State, Country]</p>
+                    <p><i class="fas fa-phone"></i> +91 [Your Phone Number]</p>
+                    <p><i class="fas fa-envelope"></i> support@radiance.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="products.html?category=cleansers">Cleansers</a></li>
+                        <li><a href="products.html?category=serums">Serums</a></li>
+                        <li><a href="products.html?category=moisturizers">Moisturizers</a></li>
+                        <li><a href="products.html?category=masks">Masks & Treatments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="ingredients.html">Our Ingredients</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Press & Media</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Radiance Skincare. All rights reserved.</p>
+                <p>Handcrafted with love.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/product-detail.js"></script> </body>
+</html>

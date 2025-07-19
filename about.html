@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Portfolio - DreamEvents</title>
+    <title>About Us - DreamEvents</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +20,8 @@
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <a href="contact.html" class="button primary-button hidden-mobile">Get a Quote</a>
@@ -32,73 +32,82 @@
         </div>
     </header>
 
-    <section class="page-header portfolio-header">
+    <section class="page-header about-header">
         <div class="container text-center">
-            <h1>Our Masterpieces</h1>
-            <p>Explore a selection of our most memorable events, meticulously planned and beautifully executed.</p>
+            <h1>About DreamEvents</h1>
+            <p>Our story of passion, creativity, and commitment to unforgettable experiences.</p>
         </div>
     </section>
 
-    <section class="portfolio-gallery section-padding bg-light">
+    <section class="about-content section-padding">
         <div class="container">
-            <div class="filter-buttons text-center">
-                <button class="button secondary-button active" data-filter="all">All Events</button>
-                <button class="button secondary-button" data-filter="wedding">Weddings</button>
-                <button class="button secondary-button" data-filter="corporate">Corporate</button>
-                <button class="button secondary-button" data-filter="social">Social Events</button>
-                <button class="button secondary-button" data-filter="decor">Decor</button>
+            <div class="about-us-block">
+                <div class="about-image">
+                    <img src="images/about-team.jpg" alt="DreamEvents Team">
+                </div>
+                <div class="about-text">
+                    <h2>Our Journey to Excellence</h2>
+                    <p>Founded in 20XX, DreamEvents started with a simple yet powerful vision: to transform ordinary events into extraordinary memories. What began as a small team with a shared love for impeccable planning and breathtaking design has grown into a leading event management company known for its creativity, precision, and personalized approach.</p>
+                    <p>We believe every celebration, big or small, deserves meticulous attention and a unique touch. Our journey has been marked by countless successful events, glowing testimonials, and the joy of seeing our clients' dreams come true. We pride ourselves on building lasting relationships and becoming a trusted partner in all their special moments.</p>
+                </div>
             </div>
 
-            <div class="gallery-grid" id="portfolioGallery">
-                <div class="gallery-item" data-category="wedding">
-                    <img src="image/grand-palace.jpeg" alt="Elegant Wedding">
-                    <div class="item-overlay">
-                        <h3>Grand Palace Wedding</h3>
-                        <p>Luxury & Tradition Combined</p>
-                        <a href="portfolio-detail.html?id=1" class="view-details">View Project <i class="fas fa-arrow-right"></i></a>
+            <div class="mission-vision-values">
+                <div class="value-card">
+                    <i class="fas fa-bullseye icon"></i>
+                    <h3>Our Mission</h3>
+                    <p>To meticulously plan and flawlessly execute every event, exceeding client expectations by delivering innovative solutions and creating unforgettable experiences.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-lightbulb icon"></i>
+                    <h3>Our Vision</h3>
+                    <p>To be the premier event planning company, recognized for our creative excellence, unwavering professionalism, and commitment to personalized service.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-star icon"></i>
+                    <h3>Our Values</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Creativity</li>
+                        <li><i class="fas fa-check"></i> Integrity</li>
+                        <li><i class="fas fa-check"></i> Excellence</li>
+                        <li><i class="fas fa-check"></i> Collaboration</li>
+                        <li><i class="fas fa-check"></i> Client-Centricity</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="team-section text-center">
+                <h2 class="section-title">Meet Our Dedicated Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="images/team-member1.jpg" alt="CEO Name">
+                        <h4>Jane Doe</h4>
+                        <p>Founder & CEO</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/team-member2.jpg" alt="Lead Planner Name">
+                        <h4>John Smith</h4>
+                        <p>Lead Event Planner</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/team-member3.jpg" alt="Creative Director Name">
+                        <h4>Emily White</h4>
+                        <p>Creative Director</p>
+                        <div class="member-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="corporate">
-                    <img src="image/ceo-awards-bg.jpg" alt="Corporate Gala">
-                    <div class="item-overlay">
-                        <h3>Annual CEO Gala</h3>
-                        <p>Sophistication & Networking</p>
-                        <a href="portfolio-detail.html?id=2" class="view-details">View Project <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="social">
-                    <img src="image/birthday.jpg" alt="Birthday Party">
-                    <div class="item-overlay">
-                        <h3>Vibrant Birthday Bash</h3>
-                        <p>Joyful Celebrations</p>
-                        <a href="portfolio-detail.html?id=3" class="view-details">View Project <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="decor">
-                    <img src="image/garden-theme.jpg" alt="Floral Decor">
-                    <div class="item-overlay">
-                        <h3>Enchanted Garden Theme</h3>
-                        <p>Exquisite Floral Artistry</p>
-                        <a href="portfolio-detail.html?id=4" class="view-details">View Project <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="wedding">
-                    <img src="image/Destination-Beach-Wedding.jpg" alt="Beach Wedding">
-                    <div class="item-overlay">
-                        <h3>Serene Beach Nuptials</h3>
-                        <p>Sunset & Sea Breezes</p>
-                        <a href="portfolio-detail.html?id=5" class="view-details">View Project <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="corporate">
-                    <img src="image/product-launch.jpg" alt="Product Launch">
-                    <div class="item-overlay">
-                        <h3>Tech Product Launch</h3>
-                        <p>Innovative & Impactful</p>
-                        <a href="portfolio-detail.html?id=6" class="view-details">View Project <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                </div>
+            </div>
         </div>
     </section>
 
@@ -157,5 +166,5 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/portfolio.js"></script> </body>
+</body>
 </html>
